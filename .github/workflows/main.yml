@@ -17,7 +17,7 @@ jobs:
         java-version: 11
     - run: |
         chmod +x ./gradlew
-        ./gradlew :module:assembleRelease
+        ./gradlew :app:Auto-Il2cppDumper
     - uses: actions/upload-artifact@v3
       with:
         name: zygisk-il2cppdumper
