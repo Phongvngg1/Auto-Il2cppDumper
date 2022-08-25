@@ -4,7 +4,7 @@ on:
       inputs:
         package_name:
           description: "Package name of the game:"
-          required: true
+          required: false
 
 jobs:
   build:
