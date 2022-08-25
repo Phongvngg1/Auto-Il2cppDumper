@@ -1,10 +1,6 @@
 name: Build
 on:
   workflow_dispatch:
-      inputs:
-        package_name:
-          description: "Package name of the game:"
-          required: false
 
 jobs:
   build:
@@ -20,5 +16,5 @@ jobs:
         ./gradlew :app:assembleRelease
     - uses: actions/upload-artifact@v3
       with:
-        name: zygisk-il2cppdumper
-        path: out/magisk_module_release/
+        name: libnative-lib.so
+        path: /home/runner/work/Auto-Il2cppDumper/Auto-Il2cppDumper/app/build/intermediates/cmake/release/obj/armeabi-v7a/
